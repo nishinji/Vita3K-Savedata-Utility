@@ -3,7 +3,7 @@ import os
 file_path = "./input/"
 output_file = 'sdslot.dat'
 max_slots = 255
-header = b'\x53\x44\x53\x4C'  # 'SDSL'
+header = b'\x53\x44\x53\x4C\x00\x00\x00\x00\x00\x01'  # 'SDSL'
 padding_size = 0x200  # 512バイト
 slot_start_address = 0x200  # スロットの開始アドレス
 data_start_address = 0x400  # データの開始アドレス
